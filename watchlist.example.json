@@ -1,0 +1,26 @@
+{
+  "_comment": "Starter watch list. Add products to items (see the README in notes.md). Keys starting with _ are ignored.",
+  "stores": ["Spar", "Eurospar", "Interspar", "Maximarkt", "Billa", "Billa Plus", "Hofer", "Lidl", "Penny", "MPreis", "Norma", "Adeg"],
+  "merge_stores": ["Spar", "Eurospar", "Interspar"],
+  "categories": {
+    "drinks": "🥤 Drinks",
+    "meat": "🥩 Meat & fish",
+    "dairy": "🧀 Dairy",
+    "other": "🛒 Other"
+  },
+  "fire": { "min_discount_pct": 40, "deal_regex": "\\b(1\\+1|2\\+2|3\\+3|6\\+6|12\\+12)\\b|-\\s?50\\s?%" },
+  "legend": "✅ confirmed · ❓ not confirmed · 🔥 great deal · prices without deposit",
+  "items": [],
+  "_example_items": [
+    { "id": "cola_zero", "category": "drinks", "match": "coca|coke", "exclude": "dose|0,33",
+      "zero_named": "zero", "generic": "limonaden|versch|sorten|div\\.", "zero_label": "Zero",
+      "min_litres": 1.0, "fire": { "max_per_litre": 0.90 } },
+    { "id": "butter", "category": "dairy", "match": "\\bbutter\\b", "exclude": "keks|croissant|brezel|milch", "unit": "kg", "max_per_kg": 9.0 },
+    { "id": "salmon", "category": "meat", "match": "lachs", "exclude": "creme|aufstrich", "unit": "kg", "max_per_kg": 20.0, "fire": false }
+  ],
+  "sources": {
+    "aktionsradar_categories": [],
+    "lidl_terms": [],
+    "billa_terms": []
+  }
+}
