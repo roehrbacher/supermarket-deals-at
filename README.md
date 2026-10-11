@@ -24,11 +24,11 @@ Requirements: Linux/macOS, `python3` ≥ 3.8 (standard library only), `curl`.
 ## Install
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/roehrbacher/supermarket-deals-at/main/install.sh -o install.sh
+curl -fsSL https://raw.githubusercontent.com/roehrbacher/supermarket-deals-at/a9aa9d180c0308c042a0ce4d5b0cea529f3f92d2/install.sh -o install.sh
 bash install.sh /workspace/supermarket-deals     # any data directory
 ```
 
-The installer writes `report.py` and `watchlist.example.json`, creates `watchlist.json` only if it does not exist, and never touches `state.json`. It prints the sha256 prefix of `report.py` so you can verify it.
+The installer writes `report.py` and `watchlist.example.json`, creates `watchlist.json` only if it does not exist, and never touches `state.json`. It prints the sha256 prefix of `report.py` so you can verify it (v1.0.0: `a1762ac87a7cb43a`). The URL above is pinned to the v1.0.0 commit `a9aa9d1`.
 
 ## Usage
 
